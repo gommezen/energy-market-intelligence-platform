@@ -1,0 +1,58 @@
+# -------------------------------
+# 🔒 Environment & local config
+# -------------------------------
+.venv/
+.env
+*.env
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -------------------------------
+# 🧠 Jupyter + notebook outputs
+# -------------------------------
+**/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -------------------------------
+# 📊 Data (raw, processed)
+# Keep small reference samples only!
+# -------------------------------
+data/raw/
+data/processed/
+!data/raw/README.md   # you can keep a small doc
+!data/processed/README.md
+
+# -------------------------------
+# 🤖 Reports & generated artifacts
+# -------------------------------
+reports/*
+!reports/example_congestion_income_report.html
+!reports/README.md
+
+# -------------------------------
+# 📦 Build / cache / temp
+# -------------------------------
+build/
+dist/
+downloads/
+*.egg-info/
+.eggs/
+*.log
+*.tmp
+*.bak
+*.zip
+
+# -------------------------------
+# 💻 IDE & OS metadata
+# -------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# 🚀 Python packaging
+# -------------------------------
+*.egg
+MANIFEST
