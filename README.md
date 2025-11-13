@@ -35,23 +35,6 @@ It’s built for analysts, researchers, and engineers who want to understand the
 
 ---
 
-## 📁 Repository Structure
-
-energy-market-intelligence-platform/
-├── notebooks/ # Jupyter workflows (e.g. 1_data_ingestion.ipynb)
-├── src/ # Modular Python source code
-├── data/
-│ ├── raw/ # Local input data (excluded from Git)
-│ └── processed/ # Cleaned parquet files
-├── reports/
-│ ├── example_congestion_income_report.html # Sample AI-assisted output
-│ └── README.md
-├── requirements.txt
-└── README.md
-
-
----
-
 ## 🧩 Example Output
 
 An example interactive report is included at  

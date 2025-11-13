@@ -56,3 +56,6 @@ Thumbs.db
 # -------------------------------
 *.egg
 MANIFEST
+
+# Ignore secrets in '.env'
+.env
