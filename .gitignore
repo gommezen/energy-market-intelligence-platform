@@ -14,6 +14,13 @@ __pycache__/
 **/.ipynb_checkpoints/
 *.ipynb_checkpoints
 
+#-----------------------------
+# Jupyter internal state DB
+#-----------------------------
+.jupyter_ystore.db
+**/.jupyter_ystore.db
+
+
 # -------------------------------
 # 📊 Data (raw, processed)
 # Keep small reference samples only!
