@@ -1,7 +1,7 @@
 import pandas as pd
 import requests_cache
 from entsoe import EntsoePandasClient
-from src.config import ENTSOE_API_KEY, TIMEZONE, AREA
+from src.config import ENTSOE_API_TOKEN, TIMEZONE, AREA
 
 def fetch_day_ahead_prices(start: str, end: str, area: str = AREA) -> pd.Series:
     session = requests_cache.CachedSession('cache/entsoe_cache')

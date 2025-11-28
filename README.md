@@ -1,49 +1,49 @@
 # ⚡ Open Power Analyst – Energy Market Intelligence Platform
 
-**Phase 1: Core Data & AI-Assisted Reporting**
-
-_“A local-first exploration of transparency, volatility, and foresight in the European power system.”_
-
----
-
 ## 🧭 Overview
+Open Power Analyst is an open-source, local-first analytics platform for working with public electricity-market data from the ENTSO-E Transparency Platform.
+It combines robust data processing with AI-assisted interpretation using fully local large-language models (via Ollama).
 
-**Open Power Analyst** is a local-first, open-source platform for exploring, cleaning, and forecasting electricity-market dynamics using public data from the **ENTSO-E Transparency Platform**.  
-
-The project demonstrates how reproducible, data-driven energy analysis can be combined with **local large-language-model (LLM) interpretation** to generate readable, explainable insights — entirely offline.
-
-It’s built for analysts, researchers, and engineers who want to understand the drivers of market volatility and congestion revenues while keeping computation, data, and models on their own machines.
+The goal is to provide a transparent, extensible, and offline-capable toolkit for analysts, researchers, and engineers who want clear insight into market volatility, congestion income, and flow-based coupling dynamics.
 
 ---
 
-## 🧠 Key Features
+## 🔑 Core Capabilities
 
-- **Automated Data Ingestion & Cleaning**  
-  Scripts and notebooks for importing, parsing, and validating ENTSO-E datasets (day-ahead prices, load, congestion income, etc.).
+- ## API-based data ingestion ##
+Clean pipelines for retrieving and validating A25 Flow-Based Congestion Income.
 
-- **Structured Time-Series Analysis**  
-  Tools for computing volatility, mean revenue, and coefficient of variation on intraday or hourly resolution.
+- ## Feature-rich time-series engineering ##
+Feature-rich time-series engineering
+Temporal structure, lags, rolling statistics, volatility regimes, and microstructure signals.
 
-- **Interactive Visualisation**  
-  Built with Plotly for high-resolution, exploratory analysis.
+- ## Local LLM commentary ##
+Interactive visualisation
+Plotly-based charts for intraday and hourly patterns, volatility, and correlation structure.
 
-- **AI-Assisted Market Commentary**  
-  Local LLMs (via **Ollama** and models like `llama3.1:8b-instruct-q8_0`) generate concise textual summaries interpreting market metrics.
+- ## API-based data ingestion ##
+Local LLM commentary
+Generates readable market summaries and feature interpretations using your own local models.
 
-- **Automatic Report Export**  
-  Each analysis run can produce a standalone HTML report combining visuals, numerical summaries, and LLM commentary.
+- ## Automatic HTML reporting ##
+Automatic HTML reporting
+Both Notebook 1 and Notebook 2 can export standalone reports mixing figures, stats, and LLM output.
 
 ---
 
-## 🧩 Example Output
+## Project structure
 
-An example interactive report is included at  
-`reports/example_congestion_income_report.html`
+/data
+    /raw          ← raw API XML
+    /processed    ← cleaned & feature datasets
+/notebooks
+    1_data_ingestion.ipynb
+    2_feature_engineering.ipynb
+/src
+    /reporting    ← HTML report exporters
+.env.example
+requirements.txt
 
-It visualises flow-based congestion-income data for the **DK2 bidding zone**, with:
-- 15-minute resolution time series,
-- volatility and hourly spread metrics, and
-- automatically generated interpretation written by a local LLM.
 
 ---
 
@@ -71,28 +71,26 @@ It visualises flow-based congestion-income data for the **DK2 bidding zone**, wi
    ```
 
 4. **Open and run the notebook**
-   - Start with: `1_data_ingestion.ipynb`
-   - This notebook ingests, cleans, visualizes, and generates AI-assisted reports.
+   Start with:
+   - Notebook 1 – API ingestion, cleaning, diagnostics, LLM report
+   - Notebook 2 – Feature engineering, correlation, AI interpretation
 
 ---
 
-## 🧭 Roadmap
+## 🧪 Example Outputs ##
 
-**Phase 2 – Feature Engineering & Forecasting**  
-Lag features, rolling statistics, and model training (Prophet, XGBoost, etc.).
+Interactive HTML reports are stored in:
 
-**Phase 3 – Optimization & Decision Support**  
-Integrating forecasts with asset portfolios and dispatch optimization.
-
-**Phase 4 – Explainability & Participatory Insights**  
-Multi-agent LLMs and explainable dashboards for citizen-science and policy engagement.
+/reports/
+    congestion_income_report_<timestamp>.html
+    feature_engineering_report_<timestamp>.html
 
 ---
 
 ## 🧰 Tech Stack
 
 - **Python 3.11+**
-- **Pandas · Plotly · DuckDB · Polars**
+- **Pandas · Plotly · NumPy**
 - **Jupyter Lab** for reproducible workflows
 - **Ollama + LLaMA 3.1 8B** for local generative analysis
 - **ENTSO-E Transparency API** for open electricity-market data
@@ -102,6 +100,6 @@ Multi-agent LLMs and explainable dashboards for citizen-science and policy engag
 ## 📜 License & Attribution
 
 Released under the **MIT License**.  
-Data courtesy of the [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/).
+Data sourced from: [ENTSO-E Transparency Platform](https://transparency.entsoe.eu/).
 
 © 2025 Niels Gommesen
