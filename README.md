@@ -31,21 +31,6 @@ Both Notebook 1 and Notebook 2 can export standalone reports mixing figures, sta
 
 ---
 
-## Project structure
-
-/data
-    /raw          ← raw API XML
-    /processed    ← cleaned & feature datasets
-/notebooks
-    1_data_ingestion.ipynb
-    2_feature_engineering.ipynb
-/src
-    /reporting    ← HTML report exporters
-.env.example
-requirements.txt
-
-
----
 
 ## 🚀 Getting Started
 
