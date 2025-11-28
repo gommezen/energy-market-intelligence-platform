@@ -10,22 +10,22 @@ The goal is to provide a transparent, extensible, and offline-capable toolkit fo
 
 ## 🔑 Core Capabilities
 
-- ## API-based data ingestion ##
+- **API-based data ingestion**
 Clean pipelines for retrieving and validating A25 Flow-Based Congestion Income.
 
-- ## Feature-rich time-series engineering ##
+- **Feature-rich time-series engineering**
 Feature-rich time-series engineering
 Temporal structure, lags, rolling statistics, volatility regimes, and microstructure signals.
 
-- ## Local LLM commentary ##
+- **Local LLM commentary**
 Interactive visualisation
 Plotly-based charts for intraday and hourly patterns, volatility, and correlation structure.
 
-- ## API-based data ingestion ##
+- **API-based data ingestion**
 Local LLM commentary
 Generates readable market summaries and feature interpretations using your own local models.
 
-- ## Automatic HTML reporting ##
+- **Automatic HTML reporting**
 Automatic HTML reporting
 Both Notebook 1 and Notebook 2 can export standalone reports mixing figures, stats, and LLM output.
 
