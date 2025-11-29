@@ -1,0 +1,23 @@
+digraph {
+	rankdir=LR size="8,5"
+	A [label="Engineered Features
+(df_super)"]
+	B [label="Train/Test Split
+(time-respecting)"]
+	C [label="Baseline Models
+(naive, seasonal, rolling)"]
+	D [label="Random Forest
+Training"]
+	E [label="Forecast Outputs
+(y_pred_rf, baselines)"]
+	F [label="Residual Diagnostics
+(residual_stats)"]
+	G [label="LLM Evaluation
+(generate_llm_evaluation)"]
+	A -> B
+	B -> C
+	B -> D
+	D -> E
+	E -> F
+	F -> G
+}

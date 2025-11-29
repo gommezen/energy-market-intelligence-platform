@@ -10,24 +10,32 @@ The goal is to provide a transparent, extensible, and offline-capable toolkit fo
 
 ## 🔑 Core Capabilities
 
-- **API-based data ingestion**
-Clean pipelines for retrieving and validating A25 Flow-Based Congestion Income.
+### **API-based A25 data ingestion**
+Robust pipelines for downloading, parsing, and validating Flow-Based Congestion Income 
+directly from the ENTSO-E Transparency Platform.
 
-- **Feature-rich time-series engineering**
-Feature-rich time-series engineering
-Temporal structure, lags, rolling statistics, volatility regimes, and microstructure signals.
+### **Feature-rich time-series engineering**
+Automated construction of temporal structure (lags, rolling windows), volatility regimes, 
+z-score signals, dispersion metrics, and microstructure indicators tailored for congestion 
+income forecasting.
 
-- **Local LLM commentary**
-Interactive visualisation
-Plotly-based charts for intraday and hourly patterns, volatility, and correlation structure.
+### **Baseline and model benchmarking**
+Includes naïve, seasonal naïve, and rolling-mean baselines plus Random Forest regression 
+with full metric evaluation (MAE, RMSE, MAPE, MASE).
 
-- **API-based data ingestion**
-Local LLM commentary
-Generates readable market summaries and feature interpretations using your own local models.
+### **Residual and volatility diagnostics**
+Deep-dive error analysis including skewness, autocorrelation, max deviation, and noise structure.
 
-- **Automatic HTML reporting**
-Automatic HTML reporting
-Both Notebook 1 and Notebook 2 can export standalone reports mixing figures, stats, and LLM output.
+### **Interactive visualisation**
+Plotly-powered charts for intraday patterns, volatility behaviour, and model diagnostics.
+
+### **Local LLM commentary**
+Uses your own local model (via Ollama) to generate structured, narrative market evaluations 
+based on the forecast metrics — grounded, reproducible, and domain-safe.
+
+### **Automatic HTML reporting**
+Both Notebook 1 and Notebook 2 can export standalone HTML reports combining plots, metrics, 
+and LLM-generated market commentary.
 
 ---
 
