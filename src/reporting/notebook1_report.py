@@ -73,8 +73,9 @@ def export_notebook1_report(
 
     # -----------------------------------------------------------
     # 3. Convert Plotly figure
-    # -----------------------------------------------------------
-    fig_html = pio.to_html(fig, full_html=False, include_plotlyjs="cdn")
+    # ----------------------------------------------------------- 
+    fig_html = pio.to_html(fig, full_html=False, include_plotlyjs="cdn" #type: ignore[arg-type]
+                           )
 
     # -----------------------------------------------------------
     # 4. Format summary metrics
